@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleD.css') }}">
+</head>
+<body>
+	<div class="wrapper">
+		<center><img src="{{ url_for('static', filename='mawarlogo.png') }}"></center>
+		<h1>Sign in</h1>
+		<form action="" method="POST">
+				<input type="text" placeholder="Username" name="uname" value="">
+				<input type="password" placeholder="Password" name="psw" value="">
+				<input type="submit" value="LOGIN" >
+		</form>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for msg in messages %}
+			<p style="color: cornsilk;">{{msg}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+		<div class="socials">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+		</div>
+	</div>
+	<div id="overlay-area"></div>
+</body>
+</html>

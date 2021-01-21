@@ -1,0 +1,431 @@
+body
+{
+	margin:0;
+	font-family: Arial, sans-serif;
+}
+
+.background_image 
+{
+  /* The image used */
+  background-image: url("student_2.jpg");
+
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.a
+{
+	background-color:#808000;
+	width: 96%;
+	padding:2%;
+	color: black;
+	opacity: 0.4;
+	height:80.35%;
+}
+.topnav 
+{
+  overflow: hidden;
+  background-color:black;
+  height: 75px;
+}
+img
+{
+	height: 75px;
+	width:220px;
+	float: left;
+}
+.topnav a 
+{
+  float: left;
+  height: 100%;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 26px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active_home
+{
+  background-color: #E41B17;
+  color: black;
+}
+.topnav a.home:hover
+{
+  background-color: #E41B17;
+  color: black;
+}
+.topnav a.active_about
+{
+  background-color: #59E817;
+  color: black;
+}
+.topnav a.about:hover
+{
+  background-color: #59E817;
+  color: black;
+}
+.topnav a.active_contact
+{
+  background-color: #6698FF;
+  color: black;
+}
+.topnav a.contact:hover
+{
+  background-color: #6698FF;
+  color: black;
+}
+.topnav a.active_register
+{
+  background-color: #CD7F32;
+  color: black;
+}
+.topnav a.register:hover
+{
+  background-color: #CD7F32;
+  color: black;
+}
+.topnav a.active_student_record
+{
+  background-color: #CD7F32;
+  color: black;
+}
+.topnav a.student_record:hover
+{
+  background-color: #CD7F32;
+  color: black;
+}
+.topnav a.go_back
+{
+  float: right;
+}
+.topnav a.go_back:hover
+{
+  background-color: #FFD801;
+  color: black;
+}
+.topnav a.sign_out
+{
+  float: right;
+}
+.topnav a.sign_out:hover
+{
+  background-color: #FFD801;
+  color: black;
+}
+.topnav input[type=text] 
+{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid #555;
+  width:120px;
+}
+.topnav input[type=text]:hover{background-color: #FEFCFF;border: 1px solid #ADDFFF;}
+
+
+.luar_kotak
+{
+	background-color: white;
+	opacity: 0.6;
+	position: fixed;
+	bottom: 20px;
+	left: 210px;
+	height:550px;
+	width: 940px;
+	border-radius: 10px;
+}
+.luar_kotak.registration
+{
+	height: 570px;
+	bottom: 10px;
+}
+.kotak
+{
+	background-color: grey;
+	opacity: 0.6;
+	position: fixed;
+	bottom: 50px;
+	left: 260px;
+	width: 770px;
+	height: 400px;
+	padding: 30px;
+	border-style: groove; 
+	border-radius: 10px;
+	border: 5px solid darkgrey;/*#5CB3FF*/
+}
+.kotak.registration
+{
+	bottom: 10px;
+	height: 500px;
+}
+.greeting
+{
+	border:none;
+	position: fixed;
+	bottom: 60%;
+	left: 22.5%;
+	width: 55%;
+	font-family: Calibri; /*my font reference: https://www.hostinger.my/tutorials/best-html-web-fonts*/
+	color: white;
+	text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 10px black;
+}
+.greeting.registration
+{
+	bottom: 70%;
+}
+.gambar
+{
+	position: fixed;
+	width:255px;
+	height:160px;
+	position: fixed;
+	bottom: 30%;
+	border-style: double;
+	border: 2px solid darkgrey;
+	border-radius: 10px;
+}
+.gambar:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+.gambar1{left: 26%;}
+.gambar2{left: 55%;}
+.button 
+{
+  background-color: #566D7E;
+  border:  2px solid darkgrey;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  position: fixed;
+  bottom: 20%;
+  border-radius: 10px;
+}
+.button1{left: 26%;padding: 15px 85px;}
+.button2{left: 55%;padding: 15px 50px;}
+.button:hover 
+{
+	background-color: darkgrey;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	color: black;
+}
+.register,.myform3
+{
+	border:none;
+	position: fixed;
+	top: 28%;
+	left: 23%;
+	width: 35%;
+	padding: 16px;
+	text-align: center;
+}
+.myform3{top:35%;}
+.myform,.myform1
+{
+	border:none;
+	position: fixed;
+	top: 28%;
+	left: 23%;
+	width: 35%;
+	padding: 16px;
+	text-align: center;
+}
+.myform1{left: 53%;}
+.myform input[type=text],input[type=password],select,input[type=date],.myform1 input[type=checkbox]
+{
+	font-size: 17px;
+	border: 1px solid #555;
+	width: 80%;
+	border-spacing: 5px;
+	color: black;
+}
+.myform1 input[type=checkbox]{width:17px;height:17px;}
+.myform input[type=text]:hover,input[type=password]:hover, select:hover,input[type=date]:hover,.myform1 input[type=checkbox],.for_login input[type=text]:hover,input[type=password]:hover
+{
+	background-color: #FEFCFF;
+	border: 1px solid #ADDFFF;
+}
+.myform table th,.myform1 table th{color:white;padding:10px;font-size:20px;text-shadow: 3px 3px 8px black, 0 0 25px black, 0 0 10px black;}
+.myform table td,.myform1 table td,.myform3 table th,td{text-shadow: 3px 3px 8px white, 0 0 25px white, 0 0 10px white;}
+.myform1 table td{ padding:3px 8px;}
+.myform2 
+{
+	border:none;
+	position: fixed;
+	bottom: 5%;
+	left: 36%;
+}
+.myform2 table{border-spacing:20px 0px;}
+.myform2 input[type=submit],input[type=reset],.myform3 input[type=button]
+{
+	padding:14px 50px;
+	background-color: #555;
+	color: white;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.myform2 input[type=submit]:hover,input[type=reset]:hover,.content-area table input[type=submit]:hover,.myform3 input[type=button]:hover,.for_login input[type=submit]:hover{background-color:black;}
+.myform3 table{text-align:left;border-spacing:6px 20px;}
+.content-area
+{
+	width: 100%;
+	position: fixed;
+	top: 76px;
+	background: none;
+	height: 1500px;
+}
+.content-area h2
+{
+	font-family: serif;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area p
+{
+	padding: 2% 0;
+	font-family: merienda;
+	line-height: 30px;
+}
+.content-area table
+{
+	position: absolute;
+	margin-left: 50%;
+	margin-right: 50%;
+	text-align: center;
+	/*left: 80%
+	top:80%;*/
+	transform: translate(-50%, -50%);
+	border-collapse: collapse;
+	/*border-color: rgba(0,0,0,0.2);*/
+	width: 90%;
+	height: 200px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+	/*table-layout: auto;*/
+}
+.content-area table tr{transition: auto .2s ease-in;cursor: pointer;}
+.content-area table th{padding: 10px;text-align: center;border-bottom: 1px solid;}
+.content-area table td{padding: 2px;text-align: center;border-bottom: 1px solid;background-color:white;}
+.content-area table input[type=submit] 
+{
+  background-color: #555; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/*.content-area table .button2 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.content-area table .button2:hover{background-color: #008CBA;color: white;}*/
+.content-area table tr:hover
+{
+	background-color: #f5f5f5;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+}
+.content-area #header
+{
+	background-color: #16a085;
+	color: #fff;
+	text-align: center;
+}
+/* Style tab links */
+.tablink 
+{
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  height: 75px;
+  padding: 26px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.tablink:hover 
+{
+  background-color: #FCDFFF;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent 
+{
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home,#Contact,#About {background-color: white;}
+.for_login
+{
+	position:fixed;
+	top: 18px;
+	right:0;
+	border: none;
+	background-color: white;
+	color:black;
+	margin:0;
+	padding: 0;
+}
+.for_login table
+{
+	border: none;
+}
+.for_login input[type=text],input[type=password],input[type=submit],.for_sign_in input[type=text],input[type=password]
+{font-size: 17px;width:150px;height:30px;width:100%;}
+.for_login input[type=submit] 
+{
+	width:100px;
+	background-color: #566D7E;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	color:white;
+}
+.raja_kotak
+{
+	position:fixed;
+	height: 100%;
+	background-color: white;
+	opacity: 0.6;
+	right:0;
+	top:90px;
+	width: 370px;
+}
+.for_sign_in
+{
+	position:fixed;
+	top:120px;
+	right:10px;
+	border: none;
+	color:black;
+	margin:0;
+	padding: 0;
+	background-color: grey;
+	height: 85%;
+	opacity: 0.8;
+}
+.for_sign_in table th{color:black;text-shadow: 3px 3px 8px white, 0 0 25px white, 0 0 10px white;}

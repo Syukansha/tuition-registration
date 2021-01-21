@@ -1,0 +1,83 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mawar_style.css') }}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}">
+    </head>
+    <body>
+        <div class="background_image">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <!-- <a href="#">Pusat Tuisyen Mawar</a> -->
+                        <a href="#"><img src="{{ url_for('static', filename='mawarlogo.png') }}" width="200" height="80" alt="pusat tuisyen mawar"></a>
+                    </div>
+                    <nav>
+                        <a href="http://127.0.0.1:5001/user">Home</a>
+                        <a href="http://127.0.0.1:5001/user/student">Student</a>
+                        <a href="http://127.0.0.1:5001/user/type">Registration</a>
+                        <a href="http://127.0.0.1:5001/user/teachers">Teacher</a>
+                        <a href="http://127.0.0.1:5001/logout">Logout</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="luar_kotak registration"></div>
+            <div class="kotak registration"></div>
+        </div>
+        <div class="greeting registration"><center><h1>SUBJECT REGISTRATION</h1><hr style="border:2px solid #726E6D;"></center></div>
+        <form method="POST" action="/user/registerSubject/submit">
+     
+            <div class="myform">
+                <table >
+                    
+                    <tr>
+                        <td><label for="stud_id"><b>Student ID</b></label></td>
+                        <td>: <input name="stu_id" value="{{data}}"</td>
+                    </tr>
+                    <tr>
+                        <td><label for="staffid"><b>Staff ID</b></label></td>
+                        <td>: <input type="text" name="staffid" id="staffid" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject1"><b>Bahasa Melayu</b></label></td>
+                        <td>: 1001<input type="checkbox" id="subject" name="subject" value="1001"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="subject1"><b>Bahasa Inggeris </b></label></td>
+                        <td>: 1002<input type="checkbox" id="subject" name="subject" value="1002"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="subject1"><b>Sejarah </b></label></td>
+                        <td>: 1003<input type="checkbox" id="subject" name="subject" value="1003"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject1"><b>Sains</b></label></td>
+                        <td>: 1004<input type="checkbox" id="subject" name="subject" value="1004"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject1"><b>Matematik </b></label></td>
+                        <td>: 1005<input type="checkbox" id="subject" name="subject" value="1005"></td>
+                    </tr>
+                   
+                    
+                </table>
+                <table border="1">
+                    <tr>
+                        <td rowspan="1"><label for="sub"><b>Subjects That Already Register</b></label></td>
+                        <td>{{data1}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="myform2">
+                <table>
+                    <tr>
+                        <td><input type="submit" value="Submit" style="padding: 25px 40px;"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+    </html>

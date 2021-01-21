@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Record</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<!-- <a href="#">Pusat Tuisyen Mawar</a> -->
+					<a href="#"><img src="{{ url_for('static', filename='mawarlogo.png') }}" width="200" height="80" alt="pusat tuisyen mawar"></a>
+				</div>
+				<nav>
+					<a href="http://127.0.0.1:5001/user">Home</a>
+					<a href="http://127.0.0.1:5001/user/student">Student</a>
+					<a href="http://127.0.0.1:5001/user/type">Registration</a>
+					<a href="http://127.0.0.1:5001/user/teachers">Teacher</a>
+					<a href="http://127.0.0.1:5001/logout">Logout</a>
+				</nav>
+			</div>
+		</header>
+		<div class="banner-area">
+           
+            <h2>Pusat Tuisyen Mawar</h2>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                <p>{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <h3>Welcome user {{user}}</h3>
+            <a href="http://127.0.0.1:5001/user/registerStaff"><button class="button">Add Admin User</button></a>
+        
+		</div>
+		<div class="content-area">
+			<h2></h2>
+			<!-- table at here -->
+			<br><br><br><br><br><br><br>
+			<table>
+				<tr id=header>
+					<th>Id</th>
+					<th>NAME</th>
+					<th>PASSWORD</th>
+					<th>Edit</th>
+                </tr>
+                {%for item in data %}
+				<tr>
+				<td>{{item.0}}</td>
+                <td>{{item.1}}</td>
+                <td>{{item.2}}</td>
+                <td><a href="http://127.0.0.1:5001/deleteUser/{{item.0}}"><button class="button">Delete</button></a><a href="/user/updateStaff/{{item.0}}/{{item.1}}/{{item.2}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{item.1}}"><button class="button">Update</button></a>
+                <!--<td><a href="http://127.0.0.1:5001/deleteUser/{{item.0}}">delete</a></td>
+                <td><a href="/update/{{item.0}}/{{item.1}}/{{item.2}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{item.1}}">Edit</a></td>-->
+                </tr>
+                {% endfor %}
+            </table>
+            
+        </div>
+        
+	</div>
+</body>
+
+</html>

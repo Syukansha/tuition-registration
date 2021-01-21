@@ -1,0 +1,353 @@
+body
+{
+	margin:0;
+	font-family: Arial, sans-serif;
+}
+.background_image 
+{
+	background-image: url("background.jpg");
+	height: 100%; 
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.a
+{
+	background-image: url("background.jpg");
+	width: 96%;
+	padding:2%;
+	color: white;
+	opacity: 0.4;
+	height:80.35%;
+}
+.topnav 
+{
+  overflow: hidden;
+  background-image: url("background.jpg");
+  height: 75px;
+}
+img
+{
+	height: 75px;
+	width:220px;
+	float: left;
+}
+.topnav a 
+{
+  float: left;
+  height: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.dropdown 
+{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn 
+{
+  font-size: 16px;
+  color:white;
+  border: none;
+  outline: none;
+  padding: 26px 30px;
+  background-image: url("grey.jpg");
+  font-family: inherit;
+}
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-image: url("grey.jpg");
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a 
+{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #ADA96E;color: black;}
+.dropdown:hover .dropdown-content {display: block;}
+.topnav a.active
+{
+  background-color: #ADA96E;
+  color: black;
+}
+.topnav a:hover
+{
+  background-color: #ADA96E;
+  color: black;
+}
+.topnav a.sign_in
+{
+	float: right;
+}
+.kotak
+{
+	position: fixed;
+	border: none;
+	top: 24%;
+	left: 22%;
+	width:100%;
+}
+.kotak table,tr,td,th
+{
+	border: none;
+	border-spacing: 30px 15px;
+}
+.kotak td
+{
+	text-align: center;
+}
+h1
+{
+	font-family: Calibri; /*my font reference: https://www.hostinger.my/tutorials/best-html-web-fonts*/
+	color: white;
+	text-shadow: 1px 1px 5px black, 0 0 25px black, 0 0 10px black;
+}
+.gambar
+{
+	width:320px;
+	height:173px;
+	border-style: double;
+	border: 2px solid darkgrey;
+	border-radius: 10px;
+}
+.gambar:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+.butang
+{
+	width: 100%;
+	background-color: #566D7E;
+	border:  2px solid darkgrey;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border-radius: 10px;
+	padding: 15px 50px;
+}
+.butang:hover 
+{
+	background-color: darkgrey;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	color: black;
+}
+.register table, tr,td,th
+{
+	border: none;
+	border-spacing: 30px 10px;
+}
+.register th{text-align: right;}
+.register select,option,input[type=date],input[type=text],input[type=email],input[type=submit],input[type=reset],input[type=password]
+{
+	width: 100%;
+	text-align: center;
+}
+.register input[type=password]:hover,select:hover,option:hover,input[type=date]:hover,input[type=text]:hover,input[type=email]:hover,input[type=submit]:hover,input[type=reset]:hover,input[type=checkbox]:hover
+{
+	background-color: #FEFCFF;
+	border: 1px solid blue;
+}
+.register input[type=checkbox]
+{
+	width:20px;
+	height: 15px;
+}
+.register input[type=submit],input[type=reset],input[type=button]
+{
+	padding:14px 50px;
+	background-color: #848482;
+	color: white;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.register input[type=submit]:hover,input[type=reset]:hover,input[type=button]:hover{background-color: #555;border: 2px solid white;border-radius: 10px;}
+.register .toalign{text-align:center;text-shadow: 3px 3px 8px black, 0 0 25px black, 0 0 10px black;color:white;font-size: 20px;padding:15px 0;}
+.the_background
+{
+	position: fixed;
+	background-color: white;
+	border: none;
+	top: 85px;
+	left: 14%;
+	width:73%;
+	height: 86%;
+}
+.the_background:hover
+{
+	background-color:#FBF6D9;
+}
+.register table td{text-align:left;}
+.content-area
+{
+	width: 100%;
+	position: fixed;
+	top: 76px;
+	background: none;
+	height: 1500px;
+}
+.content-area h2
+{
+	font-family: serif;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+	color: white;
+}
+.content-area p
+{
+	padding: 2% 0;
+	font-family: merienda;
+	line-height: 30px;
+}
+.content-area table
+{
+	position: absolute;
+	margin-left: 50%;
+	margin-right: 50%;
+	text-align: center;
+	/*left: 80%
+	top:80%;*/
+	transform: translate(-50%, -50%);
+	border-collapse: collapse;
+	/*border-color: rgba(0,0,0,0.2);*/
+	width: 90%;
+	height: 200px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+	/*table-layout: auto;*/
+}
+.content-area table tr{transition: auto .2s ease-in;cursor: pointer;}
+.content-area table th{padding: 10px;text-align: center;border-bottom: 1px solid;}
+.content-area table td{padding: 2px;text-align: center;border-bottom: 1px solid;background-color:white;}
+.content-area table input[type=submit] 
+{
+  background-color: #555; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.content-area table input[type=submit]:hover{background-color: #726E6D;border: 2px solid white;border-radius: 10px;}
+.content-area table tr:hover
+{
+	background-color: #f5f5f5;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+}
+.content-area #header
+{
+	background-color: #16a085;
+	color: #fff;
+	text-align: center;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

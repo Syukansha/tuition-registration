@@ -1,0 +1,56 @@
+body
+{
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  background-color: #4CAF50;
+}
+
+.background_image 
+{
+  /* The image used */
+  background-image: url("tuition wallpaper.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a
+{
+	background-color:#25383C;
+	width: 40%;
+	padding:2%;
+	color: white;
+	opacity: 0.9;
+	height:91.8%;
+}
+input[type=text],input[type=password] 
+{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=text]:hover,input[type=password]:hover
+{
+	background-color:#E5E4E2;
+}
+button 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+button:hover{opacity: 0.8;}

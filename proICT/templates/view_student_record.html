@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mawar_style.css') }}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}">
+</head>
+<body>
+	<div class="background_image">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<!-- <a href="#">Pusat Tuisyen Mawar</a> -->
+					<a href="#"><img src="{{ url_for('static', filename='mawarlogo.png') }}" width="200" height="80" alt="pusat tuisyen mawar"></a>
+				</div>
+				<nav>
+					<a href="http://127.0.0.1:5001/user">Home</a>
+					<a href="http://127.0.0.1:5001/user/student">Student</a>
+					<a href="http://127.0.0.1:5001/user/type">Registration</a>
+					<a href="http://127.0.0.1:5001/user/teachers">Teacher</a>
+					<a href="http://127.0.0.1:5001/logout">Logout</a>
+				</nav>
+			</div>
+		</header>
+		<div class="luar_kotak registration"></div>
+		<div class="kotak registration"></div>
+	</div>
+	<div class="greeting registration"><center><h1>Student Records</h1><hr style="border:2px solid #726E6D;"></center></div>
+	
+	<div class="myform3">
+		<table>
+			
+			<tr>
+				<th>Recipt Number</th>
+				<th>:</th>
+
+				<td>{{data[0][0]}}</td>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<th>:</th>
+				<td>{{data2}}</td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<th>:</th>
+				<td>{{data3}}</td>
+			</tr>
+			<tr>
+				<th>Class</th>
+				<th>:</th>
+				<td>{{dataS}}</td>
+			</tr>
+			<tr>
+				<th>Sujects</th>
+				<th>:</th>
+				<td>{{data1}}</td>
+			</tr>
+			<tr>
+				<th>Payment Amount</th>
+				<th>:</th>
+				<td>RM {{data[0][1]}}</td>
+			</tr>
+			<tr>
+				<th>Payment Status</th>
+				<th>:</th>
+				<td><p>{{data[0][2]}}</p></td>
+			</tr>
+		
+			
+
+		
+			<tr><td><a href="http://127.0.0.1:5001/user/student"><input type="button" value="Back"></a></td></tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>	

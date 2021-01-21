@@ -1,0 +1,30 @@
+{% with messages = get_flashed_messages() %}
+    
+    {% if messages %}
+        {% for msg in messages %}
+        <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<html>
+<head>
+	<title>Pusat Tuisyen Mawar</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" media="screen"/>
+</head>
+<body>
+	<div class="background_image">
+		<div class="a">
+			<br><center><h1>LOGIN</h1></center><hr><br><br><br>
+			<form action="" method="POST">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required><br><br>
+			
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required><br><br>
+			
+				<button type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

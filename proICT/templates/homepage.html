@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mawar_style.css') }}"  media="screen"/>
+	<!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="background_image">
+		<div class="topnav">
+			<img src="{{ url_for('static', filename='white.jpg') }}"  style="height:75px;width:5px;float:left;">
+			<img src="{{ url_for('static', filename='mawar_logo.jpg') }}" >
+			<img src="{{ url_for('static', filename='white.jpg') }}"  style="height:75px;width:20px;float:left;">
+			<a class="home" href="login_page.html">Home</a>
+			<a class="about" href="about.html">About</a>
+			<a class="contact" href="contact.html">Contact</a>
+			<a class="sign_out" href="login_page.html">Sign Out</a>
+		</div>
+		<div class="luar_kotak"></div>
+		<div class="kotak"></div>
+	</div>
+	<div class="greeting"><center><h1>MAWAR TUITION MANAGEMENT SYSTEM</h1><hr style="border:2px solid #726E6D;"></center></div>
+	<a href="register.html"><img class="gambar gambar1" src="{{ url_for('static', filename='student_2.jpg') }}" ></a>
+	<a href="register.html"><button class="button button1">Regisration</button></a>
+	<a href="record_management.html"><img class="gambar gambar2" src="{{ url_for('static', filename='student_2.jpg') }}"></a>
+	<a href="record_management.html"><button class="button button2">Record Management</button></a>	
+</body>
+</html>
